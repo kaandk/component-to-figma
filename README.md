@@ -1,6 +1,6 @@
-# Component to Figma — Claude Code Skill
+# /to-figma — Claude Code Skill
 
-A Claude Code skill that extracts React components from a Next.js codebase, renders them on a clean temporary page optimized for Figma's auto-layout system, captures them via the Figma MCP, and cleans up afterwards.
+A Claude Code slash command that extracts React components from a Next.js codebase, renders them on a clean temporary page optimized for Figma's auto-layout system, captures them via the Figma MCP, and cleans up afterwards.
 
 ## What it does
 
@@ -11,19 +11,19 @@ A Claude Code skill that extracts React components from a Next.js codebase, rend
 
 ## Install
 
-```bash
-claude skill install /path/to/component-to-figma.skill
-```
-
-Or copy the `SKILL.md` and `references/` folder into your project's `.claude/skills/component-to-figma/` directory.
+Copy the `SKILL.md` and `references/` folder into your project's `.claude/skills/component-to-figma/` directory.
 
 ## Usage
 
-Just ask Claude Code to send components to Figma:
+Use the slash command in Claude Code:
 
-- "Send the showcase widgets to Figma at [figma-url]"
-- "Push the card components to Figma"
-- "Export the dashboard widgets to this Figma file: [url]"
+```
+/to-figma [screenshot or description of components] send to https://figma.com/design/...
+```
+
+Examples:
+- `/to-figma [screenshot] send the widget cards to https://figma.com/design/abc123/MyFile`
+- `/to-figma the showcase widgets on /creator page to https://figma.com/design/abc123/MyFile`
 
 ## Requirements
 

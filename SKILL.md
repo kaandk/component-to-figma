@@ -1,6 +1,6 @@
 ---
-name: component-to-figma
-description: Extract React components from this codebase, render them on a clean temporary page optimized for Figma auto-layout, capture via Figma MCP, then clean up. Use when user says "send to Figma", "push to Figma", "capture components to Figma", "export to Figma", or wants to get components from the running app into a Figma file. Also triggers on "component to Figma", "widgets to Figma", or references sending UI elements to a Figma document.
+name: to-figma
+description: "SLASH COMMAND (/to-figma): Extract React components from this codebase, render them on a clean temporary page optimized for Figma auto-layout, capture via Figma MCP generate_figma_design, then clean up. Invoke ONLY via /to-figma slash command — do NOT auto-trigger on Figma mentions. This skill handles the full pipeline: identify components, create temp page with inline styles, capture to Figma, cleanup."
 ---
 
 # Component to Figma
