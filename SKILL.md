@@ -1,6 +1,7 @@
 ---
 name: to-figma
 description: "SLASH COMMAND (/to-figma): Extract React components from this codebase, render them on a clean temporary page optimized for Figma auto-layout, capture via Figma MCP generate_figma_design, then clean up. Invoke ONLY via /to-figma slash command — do NOT auto-trigger on Figma mentions. This skill handles the full pipeline: identify components, create temp page with inline styles, capture to Figma, cleanup."
+allowed-tools: Read, Write, Edit, Bash, Glob, Grep, Agent, AskUserQuestion, mcp__plugin_figma_figma__generate_figma_design, mcp__plugin_figma_figma__get_screenshot, mcp__plugin_figma_figma__get_metadata, mcp__plugin_figma_figma__use_figma, mcp__plugin_figma_figma__search_design_system
 ---
 
 # Component to Figma
